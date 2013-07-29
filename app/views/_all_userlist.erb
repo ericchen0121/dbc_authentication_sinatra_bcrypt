@@ -1,0 +1,5 @@
+<ul>
+	<% @users.each do |user| %>
+	<li>(<%= user.id %>) <b><%= user.name %></b> <i><a href="mailto:<%= user.email %>?Subject=dbc%20spamlist!"><%= user.email %></a></i></li>
+	<% end %>
+</ul>
